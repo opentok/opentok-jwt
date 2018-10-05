@@ -1,7 +1,7 @@
 # opentok-jwt
 
 Node module to generate a JWT token given an apiKey and secret.
-Useful for automated tests against anvil or other scenarios when you might need to generate these tokens.
+Useful for automated tests against the Opentok API server or other scenarios when you might need to generate these tokens.
 
 ## Install
 

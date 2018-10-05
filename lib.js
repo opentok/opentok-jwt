@@ -1,7 +1,7 @@
 const jwt = require('jsonwebtoken');
 
 /**
- * Generates a JWT token for anvil
+ * Generates a JWT token for Opentok API server
  * @param {Int} apiKey - Opentok API Key
  * @param {String} secret - Opentok API Secret
  * @param {String} issuerType - 'account' or 'project'. Type of token to generate.
@@ -19,7 +19,7 @@ const generateToken = (apiKey, secret, issuerType, expires) => {
 };
 
 /**
- * Generates an account JWT token for anvil
+ * Generates an account JWT token for Opentok API server
  * @param {Int} apiKey - Opentok API Key
  * @param {String} secret - Opentok API Secret
  * @param {Int} [defaultValue] - expiry time in seconds timestamp
@@ -30,7 +30,7 @@ const accountToken = (apiKey, secret, expires) => { // eslint-disable-line arrow
 };
 
 /**
- * Generates a project JWT token for anvil
+ * Generates a project JWT token for Opentok API server
  * @param {Int} apiKey - Opentok API Key
  * @param {String} secret - Opentok API Secret
  * @param {Int} [defaultValue] - expiry time in seconds timestamp
