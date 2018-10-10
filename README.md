@@ -12,7 +12,7 @@ npm install --save opentok-jwt
 ## Usage
 
 ```
-const { accountToken, generateToken, projectToken } = require('opentok-jwt');
+const { accountToken, generateToken, projectToken, verify } = require('opentok-jwt');
 
 const apiKey = <yourAPIKey>;
 const apiSecret = <yourAPISecret>;
@@ -30,4 +30,7 @@ const projectJWT = projectToken(apiKey, apiSecret, expires);
 // or
 const accountJWT = generateToken(apiKey, apiSecret, 'account', expires);
 const projectJWT = generateToken(apiKey, apiSecret, 'project', expires);
+
+// Verify
+const decoded = await verify(token, secret);
 ```
