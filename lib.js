@@ -40,16 +40,14 @@ const projectToken = (apiKey, secret, expires) => { // eslint-disable-line arrow
   return generateToken(apiKey, secret, 'project', expires);
 };
 
-const verify = (token, secret) => {
-  return new Promise((resolve, reject) => {
-    jwt.verify(token, secret, (err, decoded) => {
-      if (err) {
-        reject(err);
-      }
-      resolve(decoded);
-    });
+const verify = (token, secret) => new Promise((resolve, reject) => {
+  jwt.verify(token, secret, (err, decoded) => {
+    if (err) {
+      reject(err);
+    }
+    resolve(decoded);
   });
-};
+});
 
 
 module.exports = {
