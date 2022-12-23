@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/opentok/opentok-jwt#readme",
   "dependencies": {
-    "jsonwebtoken": "^8.3.0"
+    "jsonwebtoken": "^9.0.0"
   },
   "devDependencies": {
     "eslint": "^5.6.0",
