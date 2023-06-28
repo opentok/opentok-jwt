@@ -9,7 +9,7 @@ declare module 'opentok-jwt' {
         apiKey: number,
         secret: string,
         issuerType: string,
-        expires: number,
+        expires?: number,
     ): string;
 
     export function projectToken (
