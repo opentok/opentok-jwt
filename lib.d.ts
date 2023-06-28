@@ -15,7 +15,7 @@ declare module 'opentok-jwt' {
     export function projectToken (
         apiKey: number,
         secret: string,
-        expires: number
+        expires?: number
     ): string;
     
     export function verify (
